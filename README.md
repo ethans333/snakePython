@@ -1,5 +1,7 @@
 # snakePython 🐍
 
+![](Snake.gif)
+
 ```python
 #Colors
 background_color = (222, 222, 222)
