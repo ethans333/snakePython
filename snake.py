@@ -46,9 +46,6 @@ def drawGrid():
         x = gridLineWidth
         y += gridWidth + gridLineWidth
 
-running = True
-frame = 0
-
 class Snake:
     color = (255, 0, 100)
     length = 3
@@ -79,6 +76,7 @@ def gameover():
     Apple.location["y"] = 1
 
 def controls():
+    events = pg.event.get()
     if event.type == pg.KEYDOWN:
         if event.key==pg.K_UP:
             if Snake.speed["x"] != 1:
@@ -96,6 +94,8 @@ def controls():
             if Snake.speed["y"] != -1:
                 Snake.speed["x"] = 0
                 Snake.speed["y"] = 1
+
+running = True
 
 while running:
     for event in pg.event.get():
@@ -146,5 +146,4 @@ while running:
     pg.display.update()
     fpsClock.tick(fps)
 
-events = pg.event.get()
 
