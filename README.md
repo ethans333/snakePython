@@ -1,5 +1,4 @@
 # snakePython
-I breakdown what It takes to build the game Snake in python.
 
 ```python
 #Colors
